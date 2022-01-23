@@ -1,0 +1,25 @@
+<template>
+  <div>
+    <el-breadcrumb
+      separator-class="el-icon-arrow-right"
+      style="height: 30px; font-size: 18px; line-height: 30px"
+    >
+      <el-breadcrumb-item :to="{ path: '/manage/home' }"
+        >首页</el-breadcrumb-item
+      >
+      <el-breadcrumb-item><a href="/">用户信息</a></el-breadcrumb-item>
+    </el-breadcrumb>
+    <router-view />
+  </div>
+</template>
+
+
+<script>
+export default {
+  name: "UserManage",
+};
+</script>
+
+
+<style scoped>
+</style>
